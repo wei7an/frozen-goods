@@ -652,8 +652,8 @@
   }
 
   .product-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm);
   }
 
   .hero-actions {
