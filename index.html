@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>四川冻货批发 — 品质保证</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Storage Warning -->
+  <div class="storage-warning" id="storageWarning">
+    您的浏览器不支持数据存储，部分功能可能不可用。
+  </div>
+
+  <!-- SVG Icon Sprite -->
+  <svg style="display:none" aria-hidden="true">
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" fill="none" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-location" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="12 6 12 12 16 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-empty" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="1.5"/><line x1="9" y1="21" x2="9" y2="9" stroke="currentColor" stroke-width="1.5"/></symbol>
+  </svg>
+
+  <!-- Header / Nav -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">❄</span>
+        <span class="logo-text">四川冻货批发</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link active">首页</a>
+        <a href="#products" class="nav-link">产品展示</a>
+        <a href="#about" class="nav-link">关于我们</a>
+        <a href="#contact" class="nav-link">联系我们</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+        <svg width="24" height="24"><use href="#icon-menu"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">优质冻货批发 · 品质保证</h1>
+      <p class="hero-subtitle">四川冻货批发，为您提供新鲜优质的速冻食品及火锅食材</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-lg" style="background:#fff;color:var(--color-primary-dark);">浏览产品</a>
+        <a href="#contact" class="btn btn-lg btn-outline" style="border-color:#fff;color:#fff;">联系我们</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <h2 class="section-title">产品展示</h2>
+      <p class="section-subtitle">两大品类，满足您的批发采购需求</p>
+
+      <!-- Search & Filter -->
+      <div class="filter-bar">
+        <div class="search-box">
+          <svg width="18" height="18" class="search-icon"><use href="#icon-search"/></svg>
+          <input type="text" class="search-input" id="searchInput" placeholder="搜索产品名称...">
+          <button class="search-clear" id="searchClear" style="display:none" aria-label="清除搜索">
+            <svg width="16" height="16"><use href="#icon-close"/></svg>
+          </button>
+        </div>
+        <div class="category-tabs" id="categoryTabs">
+          <button class="cat-tab active" data-category="all">全部</button>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="productGrid"></div>
+
+      <!-- Empty State -->
+      <div class="empty-state" id="emptyState" style="display:none">
+        <svg width="64" height="64" style="color:var(--color-text-light)"><use href="#icon-empty"/></svg>
+        <p id="emptyText">未找到相关产品，请调整筛选条件</p>
+        <button class="btn btn-outline" id="clearFilterBtn">清除筛选</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="about-title">关于四川冻货批发</h2>
+          <p>四川冻货批发是一家专业的冻货批发企业，致力于为餐饮企业、食堂、超市及家庭提供优质冷冻食品。</p>
+          <p>我们拥有完善的冷链仓储体系和严格的品控流程，所有产品均通过食品安全检测，确保从源头到客户手中的每一个环节都安全可靠。</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <span class="feature-icon">🚚</span>
+              <div><strong>冷链配送</strong><p>全程-18°C冷链运输</p></div>
+            </div>
+            <div class="about-feature">
+              <span class="feature-icon">✅</span>
+              <div><strong>品质保证</strong><p>严格品控，安全检测</p></div>
+            </div>
+            <div class="about-feature">
+              <span class="feature-icon">💰</span>
+              <div><strong>批发价格</strong><p>源头直供，价格优惠</p></div>
+            </div>
+            <div class="about-feature">
+              <span class="feature-icon">📦</span>
+              <div><strong>品类齐全</strong><p>两大品类，一站式采购</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="about-placeholder">❄</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">联系我们</h2>
+      <p class="section-subtitle">欢迎咨询采购，我们将竭诚为您服务</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <svg width="28" height="28" style="color:var(--color-primary)"><use href="#icon-phone"/></svg>
+          <h3>联系电话</h3>
+          <p>13006692872</p>
+        </div>
+        <div class="contact-card">
+          <svg width="28" height="28" style="color:var(--color-primary)"><use href="#icon-location"/></svg>
+          <h3>公司地址</h3>
+          <p>深圳市石岩街道吉祥路四川冻肉批发</p>
+        </div>
+        <div class="contact-card">
+          <svg width="28" height="28" style="color:var(--color-primary)"><use href="#icon-clock"/></svg>
+          <h3>营业时间</h3>
+          <p>周一至周日</p>
+          <p>06:00 - 21:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">❄</span>
+        <span class="logo-text" style="color:#fff">四川冻货批发</span>
+        <p>专业冻货批发，品质值得信赖</p>
+      </div>
+      <div class="footer-links">
+        <strong>快速导航</strong>
+        <a href="#home">首页</a>
+        <a href="#products">产品展示</a>
+        <a href="#about">关于我们</a>
+        <a href="#contact">联系我们</a>
+        <a href="admin.html">管理后台</a>
+      </div>
+      <div class="footer-links">
+        <strong>产品分类</strong>
+        <a href="#products">速冻食品</a>
+        <a href="#products">火锅食材</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">© 2024 四川冻货批发 | 蜀ICP备XXXXXXXX号</div>
+    </div>
+  </footer>
+
+  <!-- Product Detail Modal -->
+  <div class="modal-overlay" id="detailModal">
+    <div class="modal-content modal-detail">
+      <button class="modal-close" id="detailClose" aria-label="关闭">
+        <svg width="18" height="18"><use href="#icon-close"/></svg>
+      </button>
+      <div class="modal-body" id="detailBody"></div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="data/products.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
